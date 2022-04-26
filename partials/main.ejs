@@ -1,0 +1,7 @@
+<h1><%= smsText.title %><span><%= smsText.title_bis %></span></h1>
+<div class="notification"><%= smsText.send_message %></div>
+<form action="/" method="POST" id="frm" autocomplete="off">
+    <input type="tel" placeholder="Phone number" id="phone" name="phone" required value="+33"/>
+    <input placeholder="message" id="message" name="message"></input>
+    <input type="submit" disabled id="send-sms" value="Send SMS"/>
+</form>
