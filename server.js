@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
 
 
 app.post('/', (req, res, next) => {
-  const accountSid = "***";
-  const authToken = "***";
+  const accountSid = '***';
+  const authToken = '***';
   const client = require('twilio')(accountSid, authToken);
 
   client.messages
